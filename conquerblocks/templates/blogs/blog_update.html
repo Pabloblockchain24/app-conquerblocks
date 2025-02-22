@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Update Blog {% endblock %}
+{% block page_title %} Actualizar blog {% endblock %}
+
+
+{% block page_content %}
+<h2> Actualizar blog </h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"> Actualizar </button>
+</form>
+{% endblock %}

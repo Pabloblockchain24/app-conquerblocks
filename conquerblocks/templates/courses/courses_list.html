@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Courses {% endblock %}
+{% block page_title %} {{title}} {% endblock %}
+
+{% block page_content %}
+
+<ul>
+    <a href="{% url 'courses:course_create' %}"> Agregar Curso </a>
+
+    {% for course in courses %}
+    <li> 
+        {% if course.course_image%}
+            <picture>
+                <img src="{{course.course_image.thumbnails.small.url}}" alt="{{course.title}}">
+            </picture>
+        {% endif %}
+        <a href="{% url 'courses:course_details' course.id %}"> {{course.id}} - {{course.title}} </a> 
+    </li>
+    {% endfor %}
+</ul>
+{% endblock %}

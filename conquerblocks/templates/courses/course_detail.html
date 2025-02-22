@@ -1,0 +1,34 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Course {% endblock %}
+{% block page_title %} Course {{course.name}}  {% endblock %}
+
+
+{% block page_content %}
+{% if not course %}
+<h2>{{title}} </h2>
+{% else %}
+<button><a href="{% url 'courses:update_course' course.pk %}">Editar Curso </a></button>
+<button><a href="{% url 'courses:delete_course' course.pk %}">Borrar Curso </a></button>
+
+
+{% if course.course_image%}
+    <picture>
+        <img src="{{course.course_image.thumbnails.large.url}}" alt="{{course.title}}">
+    </picture>
+{% endif %}
+
+<h2>Id del curso: {{course.id}}</h2>
+<h2>Nombre del curso: {{course.title}}</h2>
+<p>Descripción: {{course.content}}</p>
+
+
+{% if course.contenido%}
+    <p><a href="{{course.contenido.url}} "> Revisar temario <a/> </p>        
+    <p><a href="{{course.contenido.url}} " download> Descargar temario <a/> </p>
+{% endif %}
+
+{% endif %}
+
+<p><a href="{% url 'courses:courses_list' %}"> Volver a la lista de cursos </a></p>
+{% endblock %}

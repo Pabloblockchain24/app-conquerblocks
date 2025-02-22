@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Add Blog {% endblock %}
+{% block page_title %} Add Blog {% endblock %}
+
+
+{% block page_content %}
+<h2> Agregar Blog </h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"> Guardar Blog </button>
+</form>
+{% endblock %}

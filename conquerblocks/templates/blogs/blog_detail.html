@@ -1,0 +1,25 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Blog {% endblock %}
+{% block page_title %} Detalle {{blog.title}}  {% endblock %}
+
+
+{% block page_content %}
+
+{% if not blog %}
+<h2>{{title}} </h2>
+{% else %}
+
+{% if user.is_authenticated %}
+<button><a href="{% url 'blogs:update_blog' blog.pk %}">Editar blog </a></button>
+<button><a href="{% url 'blogs:delete_blog' blog.pk %}">Borrar blog </a></button>
+{% endif %}
+
+<h2>Nombre del blog: {{blog.title}}</h2>
+<p> Escrito por: {{blog.author}} </p>
+<p>Contenido del blog: {{blog.content}}</p>
+<p>Publicado el {{blog.created_at}}  </p>
+{% endif %}
+
+<p><a href="{% url 'blogs:blogs_list' %}"> Volver a la lista de blogs </a></p>
+{% endblock %}

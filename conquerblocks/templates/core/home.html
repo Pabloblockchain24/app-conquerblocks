@@ -1,0 +1,37 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Home {% endblock %}
+
+{% block page_content %} 
+
+    <h1> La escuela lider en habla hispana que revoluciona la educación en tecnologia </h1>
+    <p> Da un giro a tu futuro profesional guiado por los mayores referentes del sector </p>
+    <p>La escuela numero 1 en desarrollo de tecnologias emergentes.Conquerblocks tiene un master pensado para ti</p>
+
+    <h2> Estudia con nosotros</h2>
+    <ul>
+        {% for course in courses %}
+        <li> <a href="{% url 'courses:course_details' course.id %}"> {{course.id}} - {{course.title}} </a> </li>
+        {% endfor %}
+    </ul>
+
+    <h2> Últimas noticias </h2>
+    <ul>
+        {% for blog in blogs %}
+        <hr>
+        <article> 
+        <h2> {{blog.title}} </h2>
+        <p> Autor: {{blog.author}}</p>  
+        <p> Descripción del blog:{{blog.content}}</p>   
+        </article>
+       <p><a href="{% url 'blogs:blog_details' blog.id %}"> Revisar detalle de {{blog.title}} </a> </p>
+        {% endfor %}
+    </ul>
+
+     <a href="{% url 'core:about_us' %}"> Conoce Conquerblocks</a>   
+
+
+{% endblock %}
+
+
+

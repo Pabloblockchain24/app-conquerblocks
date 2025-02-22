@@ -1,0 +1,24 @@
+{% extends "layout.html" %}
+{% load i18n %}
+
+{% block head_title %} Blogs {% endblock %}
+{% block page_title %} {{title}} {% endblock %}
+
+{% block page_content %}
+
+{% if user.is_authenticated %}
+<a href="{% url 'blogs:blog_create' %}"> Agregar Blog</a>
+{% endif %}
+
+<ul>
+    {% for blog in blogs %}
+    <hr>
+    <article> 
+    <h2> {{blog.title}} </h2>
+    <p> {% trans 'Autor' %}: {{blog.author}}</p>  
+    <p> {% trans 'Descripcion' %} : {{blog.content}}</p>   
+    </article>
+   <p><a href="{% url 'blogs:blog_details' blog.id %}"> Revisar detalle de {{blog.title}} </a> </p>
+    {% endfor %}
+</ul>
+{% endblock %}

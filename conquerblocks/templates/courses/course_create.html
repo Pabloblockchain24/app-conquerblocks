@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Add Course {% endblock %}
+{% block page_title %} Agregar Curso {% endblock %}
+
+
+{% block page_content %}
+<h2> Agregar Curso </h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form.as_p}}
+    <button type="submit"> Guardar Curso </button>
+</form>
+{% endblock %}

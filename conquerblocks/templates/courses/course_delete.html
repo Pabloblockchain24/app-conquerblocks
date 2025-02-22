@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Borrar Course {% endblock %}
+{% block page_title %} Borrar Curso con Delete View {% endblock %}
+
+
+{% block page_content %}
+<h2> ¿Eliminar Curso {{object.title}}? </h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit"> Confirmar </button>
+</form>
+{% endblock %}

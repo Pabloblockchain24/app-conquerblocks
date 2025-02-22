@@ -1,0 +1,15 @@
+{% extends "layout.html" %}
+
+{% block head_title %} Borrar Blog {% endblock %}
+{% block page_title %} Borrar Blog {% endblock %}
+
+
+{% block page_content %}
+<h2> ¿Eliminar Blog {{object.title}}? </h2>
+
+<form action="" method="POST">
+    {% csrf_token %}
+    {{form}}
+    <button type="submit"> Confirmar </button>
+</form>
+{% endblock %}

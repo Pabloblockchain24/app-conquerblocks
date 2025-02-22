@@ -1,0 +1,80 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-22 14:34-0300\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=3; plural=n == 1 ? 0 : n != 0 && n % 1000000 == 0 ? "
+"1 : 2;\n"
+
+#: blogs/views.py:31
+msgid "¡El blog se ha creado con éxito!"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:3
+msgid "Inicio"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:4
+msgid "Registrarse"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:5
+msgid "Sobre nosotros"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:6
+msgid "Contactanos"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:7
+msgid "Cursos"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:8
+msgid "Blogs"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:9
+msgid "Prueba"
+msgstr ""
+
+#: conquerblocks/templates/_includes/_menu_principal.html:29
+msgid "Cambiar idioma"
+msgstr ""
+
+#: conquerblocks/templates/core/about_us.html:4
+msgid "Acerca de conquerblocks"
+msgstr ""
+
+#: core/forms.py:6
+msgid "Nombre"
+msgstr ""
+
+#: core/forms.py:10
+msgid "Email"
+msgstr ""
+
+#: core/forms.py:16
+msgid "El nombre debe tener al menos 5 caracteres"
+msgstr ""
+
+#: core/forms.py:21
+msgid "Nombre de usuario"
+msgstr ""
+
+#: core/forms.py:25
+msgid "Contraseña"
+msgstr ""

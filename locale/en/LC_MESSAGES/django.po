@@ -1,0 +1,93 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2025-02-22 16:36-0300\n"
+"PO-Revision-Date: 2025-02-22 16:37-0300\n"
+"Last-Translator:   <parcepaiva@gmail.com>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+"X-Translated-Using: django-rosetta 0.10.1\n"
+
+#: blogs/views.py:31
+msgid "¡El blog se ha creado con éxito!"
+msgstr "Blog add successfully "
+
+#: conquerblocks/templates/_includes/_menu_principal.html:3
+msgid "Inicio"
+msgstr "Home"
+
+#: conquerblocks/templates/_includes/_menu_principal.html:4
+msgid "Registrarse"
+msgstr "Register"
+
+#: conquerblocks/templates/_includes/_menu_principal.html:5
+msgid "Sobre nosotros"
+msgstr "About-us"
+
+#: conquerblocks/templates/_includes/_menu_principal.html:6
+msgid "Contactanos"
+msgstr "Contact-us"
+
+#: conquerblocks/templates/_includes/_menu_principal.html:7
+msgid "Cursos"
+msgstr "Courses"
+
+#: conquerblocks/templates/_includes/_menu_principal.html:8
+msgid "Blogs"
+msgstr "Blog"
+
+#: conquerblocks/templates/_includes/_menu_principal.html:9
+msgid "Prueba"
+msgstr "Test"
+
+#: conquerblocks/templates/_includes/_menu_principal.html:29
+msgid "Cambiar idioma"
+msgstr "Change lang"
+
+#: conquerblocks/templates/blogs/blogs_list.html:18
+msgid "Autor"
+msgstr "Author"
+
+#: conquerblocks/templates/blogs/blogs_list.html:19
+msgid "Descripcion"
+msgstr "Description"
+
+#: conquerblocks/templates/core/about_us.html:4
+msgid "Acerca de conquerblocks"
+msgstr "About conquerblocks"
+
+#: conquerblocks/templates/core/contact_us.html:5
+#: conquerblocks/templates/core/contact_us.html:8
+msgid "Contacta a Conquerblocks"
+msgstr "Contact us"
+
+#: core/forms.py:6
+msgid "Nombre"
+msgstr "Name"
+
+#: core/forms.py:10
+msgid "Email"
+msgstr "Email"
+
+#: core/forms.py:16
+msgid "El nombre debe tener al menos 5 caracteres"
+msgstr "Name must be min 5 characters"
+
+#: core/forms.py:21
+msgid "Nombre de usuario"
+msgstr "Username"
+
+#: core/forms.py:25
+msgid "Contraseña"
+msgstr "Password"
